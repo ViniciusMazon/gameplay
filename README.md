@@ -6,3 +6,4 @@
 * [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/)
 * [react-native-iphone-x-helper](https://github.com/ptelad/react-native-iphone-x-helper)
 * [react-navigation](https://reactnavigation.org/)
+* [vector-icons](https://icons.expo.fyi/)
