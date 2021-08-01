@@ -74,5 +74,3 @@ export function AppointmentDetails() {
     </Background>
   );
 }
-
-export default AppointmentDetails;
