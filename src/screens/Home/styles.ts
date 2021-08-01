@@ -4,9 +4,6 @@ import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   header: {
     width: '100%',
     paddingHorizontal: 24,
