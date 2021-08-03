@@ -28,9 +28,10 @@ export const styles = StyleSheet.create({
   image: {
     height: 68,
     width: 64,
-    backgroundColor: theme.colors.secondary50,
+    backgroundColor: theme.colors.secondary40,
     borderWidth: 1,
     borderRadius: 8,
+    borderColor: theme.colors.secondary50,
   },
   selectBody: {
     flex: 1,

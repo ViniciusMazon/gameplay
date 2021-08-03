@@ -1,20 +1,15 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { RectButtonProps, RectButton } from 'react-native-gesture-handler';
-import { styles } from './styles';
-import { GuildIcon } from '../GuildIcon';
-import { categories } from '../../utils/categories';
-import PlayerSvg from '../../assets/player.svg';
-import CalendarSvg from '../../assets/calendar.svg';
-import { theme } from '../../global/styles/theme';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export type GuildProps = {
-  id: string;
-  name: string;
-  icon: string | null;
-  owner: boolean;
-}
+import PlayerSvg from '../../assets/player.svg';
+import CalendarSvg from '../../assets/calendar.svg';
+import { GuildProps } from '../Guild';
+import { GuildIcon } from '../GuildIcon';
+import { categories } from '../../utils/categories';
+import { theme } from '../../global/styles/theme';
+import { styles } from './styles';
 
 export type AppointmentProps = {
   id: string;
