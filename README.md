@@ -10,3 +10,4 @@
 * [react-native-svg](https://docs.expo.io/versions/latest/sdk/svg/)
 * [react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer)
 * [auth-session](https://docs.expo.dev/versions/latest/sdk/auth-session/)
+* [axios](https://github.com/axios/axios)
