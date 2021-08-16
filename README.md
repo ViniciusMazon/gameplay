@@ -13,3 +13,4 @@
 * [axios](https://github.com/axios/axios)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [babel-plugin-inline-dotenv](https://www.npmjs.com/package/babel-plugin-inline-dotenv)
+* [expo async-storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
