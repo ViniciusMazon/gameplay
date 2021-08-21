@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, ImageBackground, FlatList, Alert } from 'react-native';
+import { View, Text, ImageBackground, FlatList, Alert, Platform, Share } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 import { Fontisto } from '@expo/vector-icons';
@@ -50,12 +50,27 @@ export function AppointmentDetails() {
     }
   }
 
+  function handleShareInvitation() {
+    if (!widget.instant_invite) {
+      Alert.alert("Você não tem permissão para compartilhar essa guild");
+      return;
+    }
+    const message = Platform.OS === 'ios' ?
+      `Junte-se a ${guildSelected.guild.name}`
+      : widget.instant_invite;
+
+    Share.share({
+      message,
+      url: widget.instant_invite
+    });
+  }
+
   return (
     <Background>
       <Header
         title={'Detalhes'}
         action={
-          <BorderlessButton>
+          <BorderlessButton onPress={handleShareInvitation}>
             <Fontisto
               name="share"
               size={24}
