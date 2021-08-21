@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
+import { View, Text, ScrollView, KeyboardAvoidingView, Platform, Alert } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 import uuid from 'react-native-uuid';
@@ -49,6 +49,7 @@ export function AppointmentCreate() {
     if (
       !selectedGuild || !category || !month || !day || !hour || !minute || !description
     ) {
+      Alert.alert("Verifique o preenchimento dos campos");
       return
     }
 

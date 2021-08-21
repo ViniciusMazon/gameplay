@@ -18,8 +18,7 @@ export function SignIn() {
     try {
       await signIn();
     } catch (err) {
-      // Alert.alert(err);
-      console.log(err);
+      Alert.alert(err as string);
     }
   }
 
