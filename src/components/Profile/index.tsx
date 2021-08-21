@@ -1,15 +1,33 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Alert } from 'react-native';
+import { RectButton } from 'react-native-gesture-handler';
 import { useAuth } from '../../hooks/auth';
 import { Avatar } from '../Avatar';
 import { styles } from './styles';
 
 export function Profile() {
-  const { user } = useAuth();
+  const { user, signOut } = useAuth();
+
+  function handleSignOut() {
+    Alert.alert('Logout', 'Desenha sair do GamePlay?',
+      [
+        {
+          text: 'Não',
+          style: 'cancel'
+        },
+        {
+          text: 'Sim',
+          onPress: signOut,
+        }
+      ])
+  }
 
   return (
     <View style={styles.container}>
-      <Avatar urlImage={user.avatar} />
+      <RectButton onPress={handleSignOut}>
+        <Avatar urlImage={user.avatar} />
+      </RectButton>
 
       <View >
         <View style={styles.user}>
