@@ -5,11 +5,11 @@
 <br />
 
 <p align="center">
-  <a href="#-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-utilizar">Como utilizar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-construído-utilizando">Construído utilizando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
+  <a href="#sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-utilizar">Como utilizar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#construído-utilizando">Construído utilizando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>
 </p>
 
 <br/>
@@ -65,7 +65,7 @@ A aplicação será aberta no seu celular
 * [expo async-storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
 * [react-native-uuid](https://www.npmjs.com/package/react-native-uuid)
 
-# 🖖🏻 Como contribuir
+# Como contribuir
 
 - Faça um fork desse repositório;
 - Clone esse repositório em sua máquina: git clone `https://github.com/ViniciusMazon/gameplay.git`
@@ -77,7 +77,7 @@ A aplicação será aberta no seu celular
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 </br>
 
-# 📃 Licença
+# Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
