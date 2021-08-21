@@ -1,5 +1,23 @@
 # 🏗️ Em desenvolvimento
 
+# Como utilizar
+1 - Clone o projeto
+2 - Instale as dependências
+```
+$ yarn
+```
+3 - Rode o projeto
+```
+$ yarn start
+```
+4 - Será aberta uma aba no seu navegador, selecione a opção "Tunnel"
+5 - Instale o aplicativo do [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US) no seu celular
+5 - No terminal que está rodando o projeto, pressione:
+```
+$ a
+```
+A aplicação será aberta no seu celular
+
 # Construído utilizando
 * [expo](https://docs.expo.io/)
 * [expo-google-fonts](https://docs.expo.io/guides/using-custom-fonts/#using-a-google-font)
