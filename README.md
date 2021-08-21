@@ -2,6 +2,7 @@
 
 # Como utilizar
 1 - Clone o projeto
+
 2 - Instale as dependências
 ```
 $ yarn
