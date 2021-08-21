@@ -3,6 +3,7 @@ import { View, Text, ImageBackground, FlatList, Alert, Platform, Share } from 'r
 import { useRoute } from '@react-navigation/native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 import { Fontisto } from '@expo/vector-icons';
+import * as Linking from 'expo-linking';
 
 import { Background } from '../../components/Background';
 import { Header } from '../../components/Header';
@@ -65,6 +66,14 @@ export function AppointmentDetails() {
     });
   }
 
+  function handleOpenGuild() {
+    if (!widget.instant_invite) {
+      Alert.alert("Você não tem permissão para entrar na partida");
+      return;
+    }
+    Linking.openURL(widget.instant_invite);
+  }
+
   return (
     <Background>
       <Header
@@ -113,7 +122,7 @@ export function AppointmentDetails() {
       }
 
       <View style={styles.footer}>
-        <ButtonIcon title='Entrar na partida' />
+        <ButtonIcon title='Entrar na partida' onPress={handleOpenGuild} />
       </View>
     </Background>
   );
